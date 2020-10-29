@@ -1,0 +1,10 @@
+{
+    "round1": [
+        {
+            "id": "rectangle1",
+            "color": "black",
+            "width": "30%",
+            "height": "100px"
+        }
+    ]
+}

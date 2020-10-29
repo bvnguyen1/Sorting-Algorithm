@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h1>Sorting Algorithm</h1>
+    <input type="number" id="msg">
+    <button id="submitBtn" type="button">Generate Random</button>
+    <select name="select-box" id="select-box">
+        <option value="SelectionSort">Selection Sort</option>
+        <option value="BubbleSort">Bubble Sort</option>
+        <option value="InsertionSort">Insertion Sort</option>
+        <option value="MergeSort">Merge Sort</option>
+        <option value="QuickSort">Quick Sort</option>
+    </select>
+    <button id="runBtn" type="button">Run</button>
+    <button id="clearBtn" type="button">Clear</button>
+    <div class="float-container" id="scene">
+<!--        <div class="float-child" id="rect1" style="float:left;background:red; width:30%;height:300px;"></div>-->
+<!--        <div class="float-child" id="rect2" style="float:left;background:orange; width:30%;height:200px;">hello</div>-->
+<!--        <div class="float-child" id="rect3" style="float:left;background:green; width:30%;height:100px;">woelf</div>-->
+    </div>
+    <div class="controllers" id="controllers">
+        <button id="slower" type="button"></button>
+        <button id="backBtn" type="button" ></button>
+        <button id="playBtn" type="button"></button>
+        <button id="fowardBtn" type="button"></button>
+        <button id="faster" type="button"></button>
+    </div>
+    <div class="information" id="information">
+        <div class="source-code" id="source-code">Source Code</div>
+        <div class="analysis" id="analysis" >Analysis</div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock %}

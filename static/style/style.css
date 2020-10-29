@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+    text-align: center;
+}
+#scene{
+    width: 100%;
+    height: 500px;
+    background-color: #5e5e5e;
+    border-style: solid;
+    border-color: black;
+}
+#submitBtn {
+    margin:10px;
+    color: white;
+    background-color: #7FD257;
+    border-color: #B0D59D;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+#submitBtn:active {
+  background-color: #B0D59D;
+  border-color: #7FD257;
+
+}
+#controllers {
+    margin: 15px;
+}
+#slower{
+    width: 60px;
+    height: 40px;
+    background-color: #555555;
+    border-radius: 50px;
+}
+#backBtn{
+    width: 60px;
+    height: 40px;
+    background-color: #555555;
+    border-radius: 50px;
+    background-image: url('./logo/left.png');
+    background-size: 50%; /* To fill the dimensions of container (button), or */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:30px;
+}
+#playBtn {
+    width: 40px;
+    height: 40px;
+    background-color: #555555;
+    border-radius: 50px;
+    background-image: url('./logo/next.png');
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#fowardBtn{
+    width: 60px;
+    height: 40px;
+    background-color: #555555;
+    border-radius: 50px;
+    background-image: url('./logo/right.png');
+    background-size: 50%; /* To fill the dimensions of container (button), or */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
+#faster{
+    width: 60px;
+    height: 40px;
+    background-color: #555555;
+    border-radius: 50px;
+}
+#information{
+    width: 100%;
+    display: inline-flex;
+    float:left;
+    text-align:left;
+}
+#source-code{
+    width: 50%;
+
+}
+#analysis{
+    width: 50%;
+}
+
